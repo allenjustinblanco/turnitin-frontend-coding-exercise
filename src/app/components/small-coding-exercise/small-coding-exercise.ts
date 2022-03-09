@@ -44,6 +44,6 @@ export class SmallCodingExercise implements OnInit {
   // xs: array
   // returns: a new a: anyrray, with unique items
   removeDuplicates(xs: any) {
-      return xs.push("unique item 1", "unique item 2");
+      return [...new Set(xs)];
   }
 }
