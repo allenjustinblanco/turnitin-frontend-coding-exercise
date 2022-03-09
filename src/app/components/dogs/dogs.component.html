@@ -1,0 +1,8 @@
+<!-- random dog image -->
+<img src="{{dogs[0].message}}" alt="dog-image" width="200" height="200">
+
+<!-- 10 random dog links labeled by breed -->
+
+<div *ngFor="let dog of dogs">
+    <a href="{{dog.message}}">{{dog.message | dogBreed}}</a>
+</div>
