@@ -28,10 +28,10 @@ export class SmallCodingExercise implements OnInit {
   // moves the el: anyement to the right by 100px over a duration of 1 second
   animateRight(el: any) {
     let pos = 0;
-    let id = setInterval(frame, 1);
+    let id = setInterval(frame, 1000);
     clearInterval(id);
     function frame() {
-        if (pos == 350) {
+        if (pos == 200) {
         clearInterval(id);
         } else {
         pos++; 
